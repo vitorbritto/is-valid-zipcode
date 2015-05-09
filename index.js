@@ -19,7 +19,7 @@
         // VALIDATE METHOD
         validate.inputZipCode = function(zipcode) {
 
-            var zipCodePattern = /^[0-9]{5}\-[0-9]{3}$/;
+            var zipCodePattern = /\d{2}\.\d{3}\-\d{3}/;
             return zipCodePattern.test(zipcode);
 
         };
