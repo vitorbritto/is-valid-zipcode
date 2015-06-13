@@ -14,12 +14,22 @@
 
     var isValid = (function() {
 
+        var zipcodes = require('zipcodes-regex');
+
         var validate = validate || {};
 
         // VALIDATE METHOD
-        validate.inputZipCode = function(zipcode) {
+        validate.inputZipCode = function(zipcode, country) {
 
-            var zipCodePattern = /\d{2}\.\d{3}\-\d{3}/;
+            if (typeof country === 'undefined') {
+                country = 'BR';
+            }
+
+            if (!zipcodes[country]) {
+                return false;
+            }
+
+            var zipCodePattern = zipcodes[country];
             return zipCodePattern.test(zipcode);
 
         };
@@ -35,4 +45,3 @@
     window.isValid = isValid;
 
 })(window, document);
-
