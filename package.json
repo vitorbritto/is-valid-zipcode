@@ -25,5 +25,8 @@
   "devDependencies": {
     "chai": "*",
     "mocha": "*"
+  },
+  "dependencies": {
+    "zipcodes-regex": "^1.0.0"
   }
 }
