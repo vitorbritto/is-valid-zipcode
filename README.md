@@ -12,7 +12,7 @@ Validation for ZIP Code input.
 
 ```javascript
 var zipCodeInput = getElementById(#contact-zipcode);
-isValid.zipcode(zipcodeInput);
+isValid.zipcode(zipcodeInput, "COUNTRY-TWO-DIGIT-CODE");
 ```
 
 
