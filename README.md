@@ -11,7 +11,7 @@ Validation for ZIP Code input.
 ## Usage
 
 ```javascript
-var zipCodeInput = getElementById(#contact-zipcode);
+var zipCodeInput = getElementById('contact-zipcode');
 isValid.zipcode(zipcodeInput);
 ```
 
